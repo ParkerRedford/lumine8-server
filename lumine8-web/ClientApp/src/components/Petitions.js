@@ -45,7 +45,7 @@ export class Petitions extends Component {
     }
 
     async getPetitions() {
-        const response = await fetch('https://localhost:7219/api/GetPetitions');
+        const response = await fetch('https://lumine8.com/api/GetPetitions');
         const data = await response.json();
         this.setState({ petitionModels: data.petitionModels, petitionSigs: data.petitionSigs, users: data.users });
     }
